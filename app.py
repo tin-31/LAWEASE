@@ -9,7 +9,7 @@ import io
 # Bạn cần vào trang Google AI Studio để lấy API Key miễn phí và điền vào đây
 API_KEY = "AIzaSyAjh3mkKysCqriWu2kzml1Q-LnNjcMk3ok" 
 genai.configure(api_key=API_KEY)
-model = genai.GenerativeModel('gemini-1.5-flash-latest') # Sử dụng model tối ưu cho tốc độ và văn bản dài
+model = genai.GenerativeModel('gemini-pro') # Sử dụng model tối ưu cho tốc độ và văn bản dài
 
 st.set_page_config(page_title="Trợ Lý AI Phân Tích Hợp Đồng", page_icon="🤖")
 st.title("🤖 Trợ Lý Phân Tích Hợp Đồng (AI Document Q&A)")
