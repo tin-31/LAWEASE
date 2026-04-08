@@ -134,7 +134,7 @@ elif menu == "🤖 Trợ Lý AI Đọc PDF":
     try:
         API_KEY = st.secrets["GEMINI_API_KEY"]
         genai.configure(api_key=API_KEY)
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-pro')
     except KeyError:
         st.error("🚨 Lỗi Bảo Mật: Chưa tìm thấy API Key. Vui lòng vào Streamlit Cloud -> Settings -> Secrets và cấu hình GEMINI_API_KEY.")
         st.stop() # Dừng chạy code bên dưới nếu không có key
