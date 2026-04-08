@@ -132,7 +132,7 @@ elif menu == "🤖 Trợ Lý AI Đọc PDF":
 
     # 1. KIỂM TRA BẢO MẬT API KEY
     try:
-        API_KEY = st.secrets["AIzaSyAjh3mkKysCqriWu2kzml1Q-LnNjcMk3ok"]
+        API_KEY = st.secrets["GEMINI_API_KEY"]
         genai.configure(api_key=API_KEY)
         model = genai.GenerativeModel('gemini-1.5-flash')
     except KeyError:
